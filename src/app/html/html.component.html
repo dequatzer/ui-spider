@@ -1,0 +1,17 @@
+
+<div id="html-side-nav">
+  <ul>
+      <li *ngFor="let tag of tagList">
+          <a routerLink="{{tag.link}}" routerLinkActive="active" >{{tag.name}}</a>
+      </li>
+  </ul>
+  <!--<ul>
+    <li><a routerLink="html-intro" routerLinkActive="active">Introduction</a></li>
+    <li><a routerLink="tag-comment" routerLinkActive="active">Comment Tag</a></li>
+    <li><a routerLink="tag-doctype" routerLinkActive="active">Doctype</a></li>
+  </ul>--->
+</div>
+
+<div id="router">
+    <router-outlet></router-outlet>
+</div>
